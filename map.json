@@ -101,11 +101,6 @@
          "opacity":0.8,
          "properties":[
                 {
-                 "name":"playAudio",
-                 "type":"string",
-                 "value":"https:\/\/www.bigdrama.fr\/Close_FranceInter.mp3"
-                }, 
-                {
                  "name":"silent",
                  "type":"bool",
                  "value":true
