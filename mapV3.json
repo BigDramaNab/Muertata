@@ -1112,17 +1112,8 @@
          "tilewidth":32
         }, 
         {
-         "columns":15,
          "firstgid":321,
-         "image":"_Ressources\/HospitalTileset.png",
-         "imageheight":512,
-         "imagewidth":512,
-         "margin":0,
-         "name":"HospitalTileset",
-         "spacing":1,
-         "tilecount":225,
-         "tileheight":32,
-         "tilewidth":32
+         "source":"HospitalTileset.tsx"
         }],
  "tilewidth":32,
  "type":"map",
