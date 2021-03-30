@@ -1,0 +1,15 @@
+h1 {
+    font-size:24px;
+    color:#FFE300;
+}
+
+p {
+    color:#FFE300;
+    font-size:9px; 
+}
+
+body {
+    background-color:#000000;
+    font-family:'Courier';
+    margin:500px;
+}
