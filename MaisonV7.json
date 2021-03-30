@@ -8,8 +8,7 @@
         },
      "export":
         {
-         "format":"json",
-         "target":"."
+         "format":"json"
         }
     },
  "height":34,
@@ -631,7 +630,7 @@
                  "value":"onaction"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":46,
          "x":0,
          "y":0
@@ -646,7 +645,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.youtube.com\/embed\/DVkJ9xQPX8c?autoplay=1"
+                 "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/B01.html"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
