@@ -8,8 +8,7 @@
         },
      "export":
         {
-         "format":"json",
-         "target":"Muertata-master"
+         "format":"json"
         }
     },
  "height":34,
@@ -646,7 +645,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.bigdrama.fr\/indiceiphone.html"
+                 "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/B01.html"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
@@ -854,7 +853,7 @@
         {
          "columns":10,
          "firstgid":1,
-         "image":"Muertata-master\/Lights 1.png",
+         "image":"Lights 1.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1030,7 +1029,7 @@
         {
          "columns":10,
          "firstgid":101,
-         "image":"Muertata-master\/Objects 3.png",
+         "image":"Objects 3.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1080,7 +1079,7 @@
         {
          "columns":10,
          "firstgid":201,
-         "image":"Muertata-master\/Lights 2.png",
+         "image":"Lights 2.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1093,7 +1092,7 @@
         {
          "columns":10,
          "firstgid":301,
-         "image":"Muertata-master\/Objets 5.png",
+         "image":"Objets 5.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1106,7 +1105,7 @@
         {
          "columns":10,
          "firstgid":401,
-         "image":"Muertata-master\/Indices.png",
+         "image":"Indices.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1119,7 +1118,7 @@
         {
          "columns":10,
          "firstgid":501,
-         "image":"Muertata-master\/Mobilier.png",
+         "image":"Mobilier.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1132,7 +1131,7 @@
         {
          "columns":10,
          "firstgid":601,
-         "image":"Muertata-master\/Mobilier 2.png",
+         "image":"Mobilier 2.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1145,7 +1144,7 @@
         {
          "columns":10,
          "firstgid":701,
-         "image":"Muertata-master\/Hospital.png",
+         "image":"Hospital.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1158,7 +1157,7 @@
         {
          "columns":10,
          "firstgid":801,
-         "image":"Muertata-master\/Tapis.png",
+         "image":"Tapis.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1171,7 +1170,7 @@
         {
          "columns":10,
          "firstgid":901,
-         "image":"Muertata-master\/Fourniture.png",
+         "image":"Fourniture.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1194,7 +1193,7 @@
         {
          "columns":10,
          "firstgid":1001,
-         "image":"Muertata-master\/Fleurs.png",
+         "image":"Fleurs.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
@@ -1207,7 +1206,7 @@
         {
          "columns":10,
          "firstgid":1101,
-         "image":"Muertata-master\/Cuisine.png",
+         "image":"Cuisine.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
