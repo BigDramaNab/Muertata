@@ -8,8 +8,7 @@
         },
      "export":
         {
-         "format":"json",
-         "target":"."
+         "format":"json"
         }
     },
  "height":34,
@@ -646,7 +645,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.bigdrama.fr\/indiceiphone.html"
+                 "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/B01.html"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
