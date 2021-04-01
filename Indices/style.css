@@ -1,0 +1,18 @@
+h1 {
+    font-size:24px;
+    color:#FFE300;
+    text-transform: uppercase;
+    font-weight:400;
+    padding-bottom:50px;
+}
+
+p {
+    color:#FFE300;
+    font-size:14px; 
+}
+
+body {
+    background-color:#000000;
+    font-family:'Courier';
+    margin:100px;
+}
