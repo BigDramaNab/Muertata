@@ -6,13 +6,20 @@ h1 {
     padding-bottom:50px;
 }
 
-p {
-    color:#FFE300;
-    font-size:14px; 
+p{
+    color:white;
+    font-size:14px;
+    line-height: 20px;
 }
 
+#indice {
+    text-align: center;
+}
+
+
 body {
-    background-color:#000000;
+    background-color:black;
     font-family:'Courier';
     margin:100px;
+    text-align: center;
 }
