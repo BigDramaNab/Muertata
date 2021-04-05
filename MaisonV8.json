@@ -8,7 +8,8 @@
         },
      "export":
         {
-         "format":"json"
+         "format":"json",
+         "target":"."
         }
     },
  "height":34,
@@ -36,7 +37,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/_\/global\/bigdramanab.github.io\/Muertata\/JardinV1.json"
+                 "value":"https:\/\/play.workadventu.re\/_\/global\/bigdramanab.github.io\/Muertata\/JardinV1.1.json"
                 }],
          "type":"tilelayer",
          "visible":true,
