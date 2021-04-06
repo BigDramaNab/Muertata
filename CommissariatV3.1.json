@@ -8,8 +8,7 @@
         },
      "export":
         {
-         "format":"json",
-         "target":"."
+         "format":"json"
         }
     },
  "height":34,
@@ -37,7 +36,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/_\/global\/bigdramanab.github.io\/Muertata\/JardinV1.1.json#StartPorteCo"
+                 "value":"https:\/\/play.workadventu.re\/_\/global\/bigdramanab.github.io\/Muertata\/JardinV1.2.json#StartPorteCo"
                 }],
          "type":"tilelayer",
          "visible":true,
