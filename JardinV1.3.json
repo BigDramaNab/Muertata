@@ -231,6 +231,11 @@
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Sons\/Son_Jardin.mp3"
                 }, 
                 {
+                 "name":"playAudioLoop",
+                 "type":"string",
+                 "value":"https:\/\/bigdramanab.github.io\/Muertata\/Sons\/Son_Jardin.mp3"
+                }, 
+                {
                  "name":"silent",
                  "type":"bool",
                  "value":false
