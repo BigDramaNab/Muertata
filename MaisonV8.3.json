@@ -54,7 +54,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"cloud.bigdrama.com"
+                 "value":"cloud.bigdrama.com\/A"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -70,7 +70,7 @@
          "opacity":0.8,
          "properties":[
                 {
-                 "name":"audioLoop",
+                 "name":"playAudioLoop",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Sons\/Son_ChambreRosy V1.mp3"
                 }, 
@@ -94,7 +94,7 @@
          "opacity":0.8,
          "properties":[
                 {
-                 "name":"audioLoop",
+                 "name":"playAudioLoop",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Sons\/Son_ChambreDiane V1.mp3"
                 }, 
@@ -118,7 +118,7 @@
          "opacity":0.8,
          "properties":[
                 {
-                 "name":"audioLoop",
+                 "name":"playAudioLoop",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Sons\/Son_ChambreAnthony V1.mp3"
                 }, 
@@ -142,7 +142,7 @@
          "opacity":0.8,
          "properties":[
                 {
-                 "name":"audioLoop",
+                 "name":"playAudioLoop",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Sons\/Son_ChambreAnthony V1.mp3"
                 }, 
@@ -166,7 +166,7 @@
          "opacity":0.8,
          "properties":[
                 {
-                 "name":"audioLoop",
+                 "name":"playAudioLoop",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Sons\/Son_Ambiance G\u00e9n\u00e9rale V1.mp3"
                 }, 
@@ -205,11 +205,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/X01.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -228,11 +223,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/X02.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -251,11 +241,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/Photos\/X03.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -274,11 +259,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/Photos\/X04.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -297,11 +277,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/Photos\/X05.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -320,11 +295,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/Photos\/X06.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -343,11 +313,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/Photos\/X07.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
