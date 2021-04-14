@@ -1,0 +1,27 @@
+h1 {
+    font-size:24px;
+    color:#FFE300;
+    text-transform: uppercase;
+    font-weight:400;
+    padding-bottom:50px;
+}
+
+p{
+    color:white;
+    font-size:14px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+#indice {
+    text-align: center;
+}
+
+
+body {
+    background-color:black;
+    font-family:'Courier';
+    margin:100px;
+    text-align: center;
+}
