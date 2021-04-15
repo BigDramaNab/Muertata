@@ -8,7 +8,8 @@
         },
      "export":
         {
-         "format":"json"
+         "format":"json",
+         "target":"."
         }
     },
  "height":34,
@@ -72,7 +73,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/commissariat"
+                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/Jardin3"
                 }],
          "type":"tilelayer",
          "visible":true,
