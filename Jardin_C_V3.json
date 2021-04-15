@@ -73,7 +73,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/Jardin3"
+                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/jardin3"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -91,7 +91,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/_\/global\/bigdramanab.github.io\/Muertata\/MaisonV8.92.json"
+                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/maisonc"
                 }],
          "type":"tilelayer",
          "visible":true,
