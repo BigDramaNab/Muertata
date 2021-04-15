@@ -155,7 +155,7 @@
                 {
                  "name":"silent",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }],
          "tintcolor":"#ffdd00",
          "type":"tilelayer",
