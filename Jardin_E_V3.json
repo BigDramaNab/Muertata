@@ -70,9 +70,14 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"_exitUrl",
                  "type":"string",
                  "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/commissariat"
+                }, 
+                {
+                 "name":"exitUrl",
+                 "type":"string",
+                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/jardin1"
                 }],
          "type":"tilelayer",
          "visible":true,
