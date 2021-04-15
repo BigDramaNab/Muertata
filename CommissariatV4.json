@@ -21,7 +21,7 @@
          "name":"start",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -81,7 +81,7 @@
                  "value":"https:\/\/www.bigdrama.fr\/parfumdefamille\/a00"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":46,
          "x":0,
          "y":0
@@ -434,11 +434,6 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/G01.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":false,
@@ -456,15 +451,10 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/G01.html"
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
+                 "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/G02.html"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":46,
          "x":0,
          "y":0
