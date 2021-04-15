@@ -186,7 +186,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/cloud.bigdrama.fr\/1"
+                 "value":"https:\/\/cloud.bigdrama.fr\/5"
                 }],
          "type":"tilelayer",
          "visible":true,
