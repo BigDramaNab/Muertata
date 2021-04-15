@@ -36,7 +36,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/Jardin5#startPorteMaison"
+                 "value":"https:\/\/play.workadventu.re\/@\/big-drama\/parfum-de-famille\/Jardin5"
                 }],
          "type":"tilelayer",
          "visible":true,
