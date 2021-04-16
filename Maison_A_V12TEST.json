@@ -137,6 +137,11 @@
                  "name":"silent",
                  "type":"bool",
                  "value":true
+                }, 
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"iris"
                 }],
          "tintcolor":"#ffdd00",
          "type":"tilelayer",
