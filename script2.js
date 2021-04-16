@@ -1,17 +1,10 @@
 WA.onEnterZone('violetta', () => {
-    WA.openTab('https://www.wikipedia.org/');
+    WA.openTab('https://www.bigdrama.fr/parfumdefamille/rapportlila');
 })
 
 WA.onEnterZone('iris', () => {
     WA.disablePlayerControls();
-    WA.openPopup("popupRectangle", 'Merci de lire ce message message!', [{
-        label: "Jai lu",
-        className: "primary",
-        callback: (popup) => {
-            WA.restorePlayerControls();
-            popup.close();
-        }
-    }]);
+    
 });
 
 
