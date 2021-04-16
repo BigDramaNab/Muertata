@@ -8,8 +8,7 @@
         },
      "export":
         {
-         "format":"json",
-         "target":"."
+         "format":"json"
         }
     },
  "height":34,
@@ -2056,7 +2055,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"script.js"
+         "value":"script2.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.4.3",

@@ -1,0 +1,1 @@
+sendChatMessage(message: blabla, author: tonpere): void
