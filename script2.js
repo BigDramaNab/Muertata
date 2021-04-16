@@ -1,1 +1,3 @@
-sendChatMessage(message: blabla, author: tonpere): void
+WA.onEnterZone('violetta', () => {
+    WA.sendChatMessage("Hello!", 'Afred');
+})

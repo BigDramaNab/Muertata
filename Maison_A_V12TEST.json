@@ -60,6 +60,11 @@
                  "name":"silent",
                  "type":"bool",
                  "value":true
+                }, 
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"violetta"
                 }],
          "tintcolor":"#ffdd00",
          "type":"tilelayer",
