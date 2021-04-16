@@ -5,7 +5,7 @@ WA.onEnterZone('violetta', () => {
 WA.onEnterZone('iris', () => {
     WA.disablePlayerControls();
     WA.openPopup("popupRectangle", 'Merci de lire ce message message!', [{
-        label: "J'ai lu",
+        label: "Jai lu",
         className: "primary",
         callback: (popup) => {
             WA.restorePlayerControls();
