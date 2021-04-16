@@ -227,7 +227,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"test"
+                 "value":"A"
                 }, 
                 {
                  "name":"jitsiUrl",
