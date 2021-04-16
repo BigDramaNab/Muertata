@@ -1,5 +1,5 @@
 WA.onEnterZone('violetta', () => {
-    WA.sendChatMessage("Hello!", 'Afred');
+    WA.openTab('https://www.wikipedia.org/');
 })
 
 WA.onEnterZone('iris', () => {
