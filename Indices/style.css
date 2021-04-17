@@ -18,6 +18,10 @@ p{
     text-align: center;
 }
 
+#indice img {
+width: 100%!important;
+}
+
 
 body {
     background-color:black;
