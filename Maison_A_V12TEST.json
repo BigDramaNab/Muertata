@@ -2084,7 +2084,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"script2.js"
+         "value":"script.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
