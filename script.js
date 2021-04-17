@@ -1,10 +1,11 @@
 WA.sendChatMessage('Hello world', 'Alfred');
 
-let helloWorldPopup;
+
+
 
 // Open the popup when we enter a given zone
-helloWorldPopup = WA.onEnterZone('myZone', () => {
-    WA.openPopup("popupRectangle", 'Hello world!', [{
+helloWorldPopup = WA.onEnterZone('violetta', () => {
+    WA.openPopup("popup", 'Hello world!', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -15,6 +16,6 @@ helloWorldPopup = WA.onEnterZone('myZone', () => {
 }]);
 
 // Close the popup when we leave the zone.
-WA.onLeaveZone('myZone', () => {
+WA.onLeaveZone('violetta', () => {
     helloWorldPopup.close();
 });
