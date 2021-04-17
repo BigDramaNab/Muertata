@@ -32,12 +32,3 @@ WA.onLeaveZone('myZone', () => {
 });
   
     
-    openPopup(targetObject: string, message: string, buttons: ButtonDescriptor[]): Popup
-    
-    
-    class Popup {
-    /**
-     * Closes the popup
-     */
-    close() {};
-}
