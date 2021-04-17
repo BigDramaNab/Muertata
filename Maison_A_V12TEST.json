@@ -157,12 +157,6 @@
          "id":128,
          "name":"popup",
          "opacity":1,
-         "properties":[
-                {
-                 "name":"zone",
-                 "type":"string",
-                 "value":"alfred"
-                }],
          "type":"tilelayer",
          "visible":true,
          "width":46,
@@ -287,19 +281,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"jistiInterfaceConfig",
+                 "name":"zone",
                  "type":"string",
-                 "value":"{ \"DEFAULT_BACKGROUND\": \"#000000\" }"
-                }, 
-                {
-                 "name":"jitsiRoom",
-                 "type":"string",
-                 "value":"A"
-                }, 
-                {
-                 "name":"jitsiUrl",
-                 "type":"string",
-                 "value":"cloud.bigdrama.fr"
+                 "value":"test"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -341,6 +325,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.bigdrama.fr\/parfumdefamille\/z01\/"
+                }, 
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"alfred"
                 }],
          "type":"tilelayer",
          "visible":true,
