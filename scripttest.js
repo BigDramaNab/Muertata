@@ -1,16 +1,49 @@
-let helloWorldPopup;
+var zoneName = "popUpGoToPageZone";
+var urlPricing = "https://workadventu.re/pricing";
+var urlGettingStarted = "https://workadventu.re/getting-started";
+var isCoWebSiteOpened =  false;
 
-// Open the popup when we enter a given zone
-helloWorldPopup = WA.onEnterZone('ZONETEST', () => {
-    WA.openPopup("ZONETEST", 'Hello world!', [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
+WA.onChatMessage((message => {
+    WA.sendChatMessage('Poly Parrot says: "'+message+'"', 'Poly Parrot');
+}));
+
+WA.onEnterZone(zoneName, () => {
+    WA.openPopup("popUp","Open Links",[
+        {
+            label: "Open Tab",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab(urlPricing);
+                popup.close();
+            })
+        },
+        {
+            label: "Go To Page", className : "popUpElement",
+            callback:(popup => {
+                WA.goToPage(urlPricing);
+                popup.close();
+            })
+
         }
-    });
-};
+        ,
+        {
+            label: "openCoWebSite", className : "popUpElement",
+            callback:(popup => {
+                WA.openCoWebSite(urlPricing);
+                isCoWebSiteOpened = true;
+                popup.close();
+            })
 
+        }]);
+})
 
-WA.sendChatMessage('Scripttest fonctionne bien', 'Mr Robot');
+WA.onLeaveZone(zoneName, () => {
+    if (isCoWebSiteOpened) {
+        WA.closeCoWebSite();
+        isCoWebSiteOpened = false;
+    }
+})
+
+WA.onLeaveZone('popupZone', () => {
+
+})
