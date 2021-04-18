@@ -1,9 +1,9 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 19H14', 'PIVOT');
+WA.sendChatMessage('TEST SCRIPT JS DE 19H47 ET CA CA MARCHE', 'PIVOT');
 
 
 WA.onEnterZone('ZONETEST', () => {
     WA.disablePlayerControls();
-    WA.openPopup("myPopup1", 'NIQUE TOI TA MERE PUTAIN', [{
+    WA.openPopup("myPopup1", 'myPopup1', [{
         label: "Got it!",
         className: "primary",
         callback: (popup) => {
