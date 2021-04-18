@@ -1,4 +1,4 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 18H35', 'PIVOT');
+WA.sendChatMessage('TEST SCRIPT JS DE 18H47', 'PIVOT');
 
 
 console.log('SCRIPT LAUNCHED');
@@ -44,14 +44,14 @@ WA.onEnterZone('myTrigger', () => {
     WA.sendChatMessage("Don't step on my carpet!", 'Poly Parrot');
 })
 
-WA.onLeaveZone('popupZone', () => {
+WA.onLeaveZone('ZONETEST', () => {
 })
 
 WA.onEnterZone('notExist', () => {
     WA.sendChatMessage("YOU SHOULD NEVER SEE THIS", 'Poly Parrot');
 })
 
-WA.onEnterZone('popupZone', () => {
+WA.onEnterZone('ZONETEST', () => {
     WA.displayBubble();
     if (!isFirstTimeTuto) {
         isFirstTimeTuto = true;
@@ -76,7 +76,7 @@ WA.onEnterZone('popupZone', () => {
     ])
 });
 
-WA.onLeaveZone('popupZone', () => {
+WA.onLeaveZone('ZONETEST', () => {
     if (popUpExplanation !== undefined) popUpExplanation.close();
     WA.removeBubble();
 })
