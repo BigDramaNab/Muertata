@@ -237,6 +237,12 @@
          "id":92,
          "name":"ZONETEST3",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"ZONETEST3"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":46,
@@ -345,6 +351,12 @@
          "id":90,
          "name":"ZONETEST",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"ZONETEST"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":46,
@@ -595,7 +607,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"ScriptTuto.js"
+         "value":"script.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
