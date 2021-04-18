@@ -1,35 +1,13 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 19H55 ET CA CA MARCHE', 'PIVOT');
+let helloWorldPopup;
 
-
-WA.onEnterZone('ZONETEST3', () => {
-    WA.openPopup("myPopup2", 'myPopup2', [{
-        label: "Got it!",
-        className: "primary",
+// Open the popup when we enter a given zone
+helloWorldPopup = WA.onEnterZone('ZONETEST', () => {
+    WA.openPopup("myPopup1", 'Hello world!', [{
+        label: "Close",
+        className: "warning",
         callback: (popup) => {
-            popup.close();
+            
+ popup.close();
         }
-    }]);
-});
-
-
-
-
-WA.onEnterZone('ZONETEST3', () => {
-WA.sendChatMessage("Tu as le droit d'aller la", 'Alfred');
-})
-
-WA.onLeaveZone('ZONETEST3', () => {
-    WA.sendChatMessage("Goodbye tardif! ", 'Alfred');
-})
-
-WA.onEnterZone('myZone', () => {
-    WA.disablePlayerControls();
-    WA.openPopup("myPopup2", 'NIQUE TOI TA GRAND MERE PUTAIN', [{
-        label: "Got it!",
-        className: "primary",
-        callback: (popup) => {
-            WA.restorePlayerControls();
-            popup.close();
-        }
-    }]);
-});
+    });
+}]);
