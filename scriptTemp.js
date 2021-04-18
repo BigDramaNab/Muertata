@@ -9,7 +9,7 @@ WA.onChatMessage((message => {
     WA.sendChatMessage('Poly Parrot says: "'+message+'"', 'Poly Parrot');
 }));
 
-WA.onEnterZone(zoneName, () => {
+WA.onEnterZone("ZONETEST", () => {
     WA.openPopup("myPopup","Open Links",[
         {
             label: "Open Tab",
