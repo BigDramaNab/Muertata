@@ -10,14 +10,14 @@ var targetObjectTutoBubble ='tutoBobble';
 var targetObjectTutoChat ='tutoChat';
 var popUpExplanation = undefined;
 function launchTuto (){
-        WA.openPopup(targetObjectTutoBubble, textFirstPopup, [
+        WA.openPopup(targetObjectTutoBubble, myPopup1, [
             {
                 label: "Next",
                 className: "popUpElement",
                 callback: (popup) => {
                     popup.close();
 
-                    WA.openPopup(targetObjectTutoChat, textSecondPopup, [
+                    WA.openPopup(myPopup2, textSecondPopup, [
                         {
                             label: "Open Chat",
                             className: "popUpElement",
