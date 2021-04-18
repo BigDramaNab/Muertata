@@ -360,8 +360,30 @@
                  "type":"",
                  "visible":true,
                  "width":125.74,
-                 "x":13.65,
-                 "y":50.85
+                 "x":356.634409799555,
+                 "y":245.356310319228
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":97,
+         "name":"Object Layer",
+         "objects":[
+                {
+                 "height":132.43,
+                 "id":21,
+                 "name":"myPopup",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":125.74,
+                 "x":510.255463994061,
+                 "y":456.42791017075
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -534,8 +556,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":97,
- "nextobjectid":20,
+ "nextlayerid":98,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[
         {
