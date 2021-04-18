@@ -1,4 +1,4 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 18H05', 'PIVOT');
+WA.sendChatMessage('TEST SCRIPT JS DE 18H08', 'PIVOT');
 
 
 WA.onEnterZone('ZONETEST', () => {
@@ -12,3 +12,14 @@ WA.onEnterZone('ZONETEST', () => {
         }
     }]);
 });
+
+
+
+
+WA.onEnterZone('ZONETEST3', () => {
+WA.sendChatMessage("Tu as le droit d'aller la", 'Alfred');
+})
+
+WA.onLeaveZone('ZONETEST3', () => {
+    WA.sendChatMessage("Goodbye tardif! ", 'Alfred');
+})
