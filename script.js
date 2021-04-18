@@ -1,6 +1,10 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 17H28', 'PIVOT');
+WA.sendChatMessage('TEST SCRIPT JS DE 17H38', 'PIVOT');
 
-WA.onEnterZone('ZONETEST3', () => {
+
+let helloWorldPopup;
+
+// Open the popup when we enter a given zone
+helloWorldPopup = WA.onEnterZone('ZONETEST', () => {
     WA.openPopup("popupRectangle", 'Hello world!', [{
         label: "Close",
         className: "primary",
@@ -9,5 +13,8 @@ WA.onEnterZone('ZONETEST3', () => {
             popup.close();
         }
     });
-};
+}]);
+WA.onLeaveZone('ZONETEST', () => {
+    helloWorldPopup.close();
+});
 
