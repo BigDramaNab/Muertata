@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="https://bigdramanab.github.io/Muertata/iframe_api.js"></script>
+    
+
+<script>
+WA.onEnterZone('myZone', () => {
+    WA.disablePlayerControls();
+    WA.openPopup("popupRectangle", 'This is an imporant message!', [{
+        label: "Got it!",
+        className: "primary",
+        callback: (popup) => {
+            WA.restorePlayerControls();
+            popup.close();
+        }
+    }]);
+});
+</script>
+</head>
+    <body>
+    </body>
+</html>
