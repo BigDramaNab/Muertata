@@ -1,20 +1,18 @@
 WA.sendChatMessage('TEST SCRIPT JS DE 17H38', 'PIVOT');
 
 
-let helloWorldPopup;
+WA.onEnterZone('ZONETEST3', () => {
+WA.sendChatMessage("Tu as le droit d'aller la", 'Alfred');
+})
 
-// Open the popup when we enter a given zone
-helloWorldPopup = WA.onEnterZone('ZONETEST', () => {
-    WA.openPopup("popupRectangle", 'Hello world!', [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    });
-}]);
+WA.onLeaveZone('ZONETEST3', () => {
+    WA.sendChatMessage("Goodbye tardif! ", 'Alfred');
+})
+
+WA.onEnterZone('ZONETEST', () => {
+WA.sendChatMessage("Tu n'as pas le droit d'être ici", 'Alfred');
+})
+
 WA.onLeaveZone('ZONETEST', () => {
-    helloWorldPopup.close();
-});
-
+    WA.sendChatMessage("Goodbye tardif! ", 'Alfred');
+})
