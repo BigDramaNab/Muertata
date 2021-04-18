@@ -10,7 +10,7 @@ var targetObjectTutoBubble ='tutoBobble';
 var targetObjectTutoChat ='tutoChat';
 var popUpExplanation = undefined;
 function launchTuto (){
-        WA.openPopup(targetObjectTutoBubble, myPopup1, [
+        WA.openPopup(myPopup1, textFirstPopup, [
             {
                 label: "Next",
                 className: "popUpElement",
