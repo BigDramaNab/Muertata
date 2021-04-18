@@ -1,20 +1,10 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 17H16', 'PIVOT');
+WA.sendChatMessage('TEST SCRIPT JS DE 17H26', 'PIVOT');
 
 WA.onEnterZone('ZONETEST3', () => {
     WA.sendChatMessage("Hello! ZONE TEST 3", 'Alfred');
 })
 
 WA.onLeaveZone('ZONETEST3', () => {
-    WA.sendChatMessage("Goodbye! ZONE TEST 3", 'Alfred');
+    WA.sendChatMessage("Goodbye tardif! ", 'Alfred');
 })
 
-WA.onEnterZone('ZONETEST', () => {
-    WA.openPopup("popupRectangle", 'Hello world!', [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    });
-};
