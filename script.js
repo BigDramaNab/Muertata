@@ -1,5 +1,15 @@
-WA.sendChatMessage('Bienvenueee', 'Alfred');
+<script>
+let helloWorldPopup;
 
-WA.onEnterZone('test', () => {
-    WA.sendChatMessage('what', 'Alfred');
-})
+// Open the popup when we enter a given zone
+helloWorldPopup = WA.onEnterZone('myZone', () => {
+    WA.openPopup("popupRectangle", 'Hello world!', [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    });
+}]);
+</script>
