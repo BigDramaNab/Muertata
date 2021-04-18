@@ -1,1 +1,0 @@
-WA.sendChatMessage('VERIFICATION FAITE', 'Dieu');
