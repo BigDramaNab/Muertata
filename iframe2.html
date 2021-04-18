@@ -8,17 +8,15 @@
 </html>
 
 <script>
-let helloWorldPopup;
-
-// Open the popup when we enter a given zone
-helloWorldPopup = WA.onEnterZone('zoneTest', () => {
-    WA.openPopup("helloWorldPopup", 'Hello world!', [{
-        label: "Close",
+WA.onEnterZone('myZone', () => {
+    WA.disablePlayerControls();
+    WA.openPopup("popupRectangle", 'This is an imporant message!', [{
+        label: "Got it!",
         className: "primary",
         callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
+            WA.restorePlayerControls();
             popup.close();
         }
-    });
-}]);
+    }]);
+});
 </script>
