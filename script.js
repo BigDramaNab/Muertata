@@ -1,13 +1,11 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 19H47 ET CA CA MARCHE', 'PIVOT');
+WA.sendChatMessage('TEST SCRIPT JS DE 19H55 ET CA CA MARCHE', 'PIVOT');
 
 
-WA.onEnterZone('ZONETEST', () => {
-    WA.disablePlayerControls();
-    WA.openPopup("myPopup1", 'myPopup1', [{
+WA.onEnterZone('ZONETEST3', () => {
+    WA.openPopup("myPopup2", 'myPopup2', [{
         label: "Got it!",
         className: "primary",
         callback: (popup) => {
-            WA.restorePlayerControls();
             popup.close();
         }
     }]);
