@@ -1,13 +1,11 @@
-let helloWorldPopup;
-
-// Open the popup when we enter a given zone
-helloWorldPopup = WA.onEnterZone('ZONETEST', () => {
-    WA.openPopup("myPopup1", 'C PLUS POLI COMME CA?', [{
-        label: "Close",
-        className: "warning",
+WA.onEnterZone('ZONETEST', () => {
+    WA.disablePlayerControls();
+    WA.openPopup("POPUP", 'This is an imporant message!', [{
+        label: "Got it!",
+        className: "primary",
         callback: (popup) => {
-            
- popup.close();
+            WA.restorePlayerControls();
+            popup.close();
         }
-    });
-};
+    }]);
+});
