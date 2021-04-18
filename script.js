@@ -1,16 +1,14 @@
-WA.sendChatMessage('TEST SCRIPT JS DE 17H53', 'PIVOT');
+WA.sendChatMessage('TEST SCRIPT JS DE 17H58', 'PIVOT');
 
 
-let helloWorldPopup;
-
-// Open the popup when we enter a given zone
-helloWorldPopup = WA.onEnterZone('ZONETEST', () => {
-    WA.openPopup("myPopup1", 'je mérite des nuggets!', [{
-        label: "Close",
+WA.onEnterZone('ZONETEST', () => {
+    WA.disablePlayerControls();
+    WA.openPopup("myPopup1", 'This is an imporant message!', [{
+        label: "Got it!",
         className: "primary",
         callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
+            WA.restorePlayerControls();
             popup.close();
         }
-    });
-}]);
+    }]);
+});
