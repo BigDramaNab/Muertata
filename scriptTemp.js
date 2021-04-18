@@ -4,10 +4,6 @@ WA.sendChatMessage('TEST SCRIPT JS DE 21H10 ET CA CA MARCHE', 'PIVOT');
 
 
 
-var zoneName = "ZONETEST";
-var urlPricing = "https://www.bigdrama.fr";
-var urlGettingStarted = "https://workadventu.re/getting-started";
-var isCoWebSiteOpened =  false;
 
 WA.onChatMessage((message => {
     WA.sendChatMessage('Poly Parrot says: "'+message+'"', 'Poly Parrot');
