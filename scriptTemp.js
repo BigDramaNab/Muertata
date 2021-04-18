@@ -1,14 +1,16 @@
-var zoneName = "popUpGoToPageZone";
-var urlPricing = "https://workadventu.re/pricing";
-var urlGettingStarted = "https://workadventu.re/getting-started";
-var isCoWebSiteOpened =  false;
+
+WA.sendChatMessage('TEST SCRIPT JS DE 21H10 ET CA CA MARCHE', 'PIVOT');
+
+
+
+
 
 WA.onChatMessage((message => {
     WA.sendChatMessage('Poly Parrot says: "'+message+'"', 'Poly Parrot');
 }));
 
-WA.onEnterZone(zoneName, () => {
-    WA.openPopup("popUp","Open Links",[
+WA.onEnterZone("ZONETEST", () => {
+    WA.openPopup("myPopup","Open Links",[
         {
             label: "Open Tab",
             className: "popUpElement",
@@ -47,3 +49,6 @@ WA.onLeaveZone(zoneName, () => {
 WA.onLeaveZone('popupZone', () => {
 
 })
+
+
+WA.sendChatMessage('TEST SCRIPT JS DE 21H12 ET CA CA MARCHE', 'PIVOT');
