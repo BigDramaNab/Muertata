@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="https://play.workadventu.re/iframe_api.js"></script>
+    </head>
+    <body>
+    </body>
+</html>
+
+<script>
+let helloWorldPopup;
+
+// Open the popup when we enter a given zone
+helloWorldPopup = WA.onEnterZone('zoneTest', () => {
+    WA.openPopup("helloWorldPopup", 'Hello world!', [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    });
+}]);
+</script>
