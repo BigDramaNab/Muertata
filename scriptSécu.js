@@ -35,3 +35,6 @@ WA.onEnterZone('myZone', () => {
         }
     }]);
 });
+
+
+WA.sendChatMessage("Bienvenue dans le didacticiel, Veuillez le suivre attentivement afin de profiter au mieux de l'experience", 'Alfred');
