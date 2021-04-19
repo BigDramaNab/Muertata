@@ -1,4 +1,4 @@
-/// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
+/// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.ts" />
 
 console.log('Hello world! From Index! ');
 
