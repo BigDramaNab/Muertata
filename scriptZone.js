@@ -1,6 +1,3 @@
-WA.sendChatMessage("Bienvenue dans le didacticiel, Veuillez le suivre attentivement afin de profiter au mieux de l'experience", 'Alfred');
-
-
 WA.onEnterZone('zoneEchange', () => {
 WA.sendChatMessage("Vous entrez dans la zone d'échange, cliquez dans la map pour reprendre votre exploration", 'Alfred');
 })
