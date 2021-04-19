@@ -1,5 +1,5 @@
 
-WA.sendChatMessage('TEST SCRIPT JS DE 20H38', 'PIVOT');
+
 
 
 WA.onEnterZone('ZONETEST', () => {
