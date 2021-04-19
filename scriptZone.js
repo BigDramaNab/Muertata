@@ -5,7 +5,7 @@ WA.onEnterZone('zoneEchange', () => {
 WA.sendChatMessage("Vous entrez dans la zone d'échange", 'Alfred');
 })
 
-WA.onLeaveZone('ZONETEST3', () => {
+WA.onLeaveZone('zoneEchange', () => {
     WA.sendChatMessage("Vous quittez la zone d'échange ", 'Alfred');
 })
 
