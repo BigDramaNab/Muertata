@@ -1,3 +1,5 @@
+WA.sendChatMessage('TEST SCRIPT JS DE 17h45 ET CA CA MARCHE', 'PIVOT');
+
 
 WA.onEnterZone('exitZoneA', () => {
     WA.goToPage('https://www.bigdrama.fr/parfumdefamille/explicationsa');
