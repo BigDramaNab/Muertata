@@ -27,6 +27,10 @@ p{
 width: 100%!important;
 }
 
+#indice img:hover {
+width: 150%!important;
+}
+
 
 body {
     background-color:black;
