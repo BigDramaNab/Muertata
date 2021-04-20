@@ -13,10 +13,17 @@ p {
 </style>
 </head>
 <body style="background-color:black;margin:100px;text-align: center;color:#ffe300">
-<h1 id="titre" style="margin-bottom:90px;font-family:'Courier';font-size:24px;text-transform: uppercase;font-weight:400;">
-Votre temps est compté !
-</h1>
-<p id="demo"></p>
+<p style="margin-bottom:90px;font-family:'Courier';font-size:24px;text-transform: uppercase;font-weight:400;">
+    Vous avez 38 minutes au total pour explorer la maison.<br><br></p>
+<p id="titre" style="margin-bottom:90px;font-family:'Courier';font-size:14px;font-weight:400;">
+38m à 28m : Exploration des indices <br>
+28m à 24m : Débrief en équipe <br>
+24m à 0 : Interrogatoires des 5 suspects <br>
+<br><br>
+Votre temps restant total est de :<br>
+
+</p>
+<p id="demo" style="color:white;"></p>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Apr 20, 2021 19:12:00").getTime();
