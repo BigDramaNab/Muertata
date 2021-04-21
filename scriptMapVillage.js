@@ -20,16 +20,9 @@ WA.onEnterZone(zoneOfficeName, () => {
 })
 
 WA.onEnterZone(zoneTCMName, () => {
-    WA.disablePlayerControls();
-   currentPopup =  WA.openPopup("popUpTCM","Test 15H33 ",[{
-            label: "Afficher brief",
-            className: "popUpElement",
-            callback: (popup => {
-                WA.restorePlayerControls();
-                WA.openTab(urlPricing);
-            })
-        }]);
+    currentPopup =  WA.openPopup("popUpTCM","A tout moment vous pouvez communiquer avec les membres de votre équipe ",[]);
 })
+
 
 
 
