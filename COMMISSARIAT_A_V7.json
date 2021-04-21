@@ -21,7 +21,7 @@
          "name":"start",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -39,7 +39,7 @@
                  "value":"https:\/\/www.bigdrama.fr\/parfumdefamille\/explicationsa\/"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -57,7 +57,7 @@
                  "value":"https:\/\/www.bigdrama.fr\/parfumdefamille\/r01"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -75,7 +75,7 @@
                  "value":"exitZoneA"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -108,7 +108,7 @@
                  "value":"cloud.bigdrama.fr"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -145,7 +145,7 @@
                  "value":"https:\/\/www.bigdrama.fr\/parfumdefamille\/a00"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -163,7 +163,7 @@
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/V01.html"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -181,7 +181,7 @@
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/V02.html"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -199,7 +199,7 @@
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/V03.html"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -217,7 +217,7 @@
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/V04.html"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -229,7 +229,7 @@
          "name":"Occlusion",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -247,7 +247,7 @@
                  "value":"https:\/\/www.bigdrama.fr\/parfumdefamille\/g01\/"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -265,7 +265,7 @@
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/G02.html"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -283,7 +283,7 @@
                  "value":"https:\/\/bigdramanab.github.io\/Muertata\/Indices\/J10.html"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -295,7 +295,7 @@
          "name":"OCCLUSION",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -307,7 +307,7 @@
          "name":"bottom",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -319,7 +319,7 @@
          "name":"ArchiPortesFenetres",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -331,7 +331,7 @@
          "name":"ArchiMobilier",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -343,7 +343,7 @@
          "name":"top",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -355,7 +355,7 @@
          "name":"LETTRES",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -367,7 +367,7 @@
          "objects":[],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -378,7 +378,7 @@
          "name":"Over_Vitre sans Teint",
          "opacity":0.79,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -396,7 +396,7 @@
                  "value":3
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -408,7 +408,7 @@
          "name":"ObjetsIndices",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -420,7 +420,7 @@
          "name":"Objets Override",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
@@ -432,7 +432,7 @@
          "name":"OVER TOUT",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":46,
          "x":0,
          "y":0
