@@ -19,13 +19,22 @@ WA.onEnterZone(zoneOfficeName, () => {
         }]);
 })
 
-
+WA.onEnterZone(zoneEventName, () => {
+    currentPopup =  WA.openPopup("popUpEvent","You can create your own Event in WorkAdventure",[
+        {
+            label: "See the event page",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab(urlEvent);
+            })
+        }]);
+})
 
 WA.onEnterZone(zoneTCMName, () => {
     WA.disablePlayerControls();
     currentPopup =  WA.openPopup("popUpTCM","Equipez vous d'un casque pour continuer!",[{
         label: "Got it!",
-        className: "popUpElement",
+        className: "primary",
         callback: (popup) => {
             WA.restorePlayerControls();
             popup.close();
