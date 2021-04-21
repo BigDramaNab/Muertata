@@ -3,15 +3,15 @@ var zoneEventName = "popupEventZone";
 var zoneSchoolName = "popupSchoolZone";
 var zoneTCMName = "popupTCMZone";
 
-var urlPricing = "https://workadventu.re/pricing";
+var urlPricing = "https://www.bigdrama.fr/parfumdefamille/z01/";
 var urlSchoolOffer = "https://workadventu.re/school-offer";
 var urlEvent = "https://workadventu.re/events";
 var currentPopup = undefined;
 
 WA.onEnterZone(zoneOfficeName, () => {
-   currentPopup =  WA.openPopup("popUpOffice","You can purchase virtual office in WorkAdventure",[
+   currentPopup =  WA.openPopup("popUpOffice","Ici un petit cadeau de l'amour, Cliquez pour faire apparaitre votre brief dans un nouvel onglet ",[
         {
-            label: "See the pricing",
+            label: "Afficher brief",
             className: "popUpElement",
             callback: (popup => {
                 WA.openTab(urlPricing);
@@ -31,7 +31,7 @@ WA.onEnterZone(zoneEventName, () => {
 })
 
 WA.onEnterZone(zoneTCMName, () => {
-    currentPopup =  WA.openPopup("popUpTCM","Come meet the WorkAdventure team in our office ! ",[]);
+    currentPopup =  WA.openPopup("popUpTCM","A tout moment vous pouvez communiquer avec les membres de votre équipe ",[]);
 })
 
 
