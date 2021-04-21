@@ -33,6 +33,17 @@ WA.onEnterZone(zoneTCMName, () => {
     }]);
 });
 
+WA.onEnterZone(zoneTCMName, () => {
+    WA.disablePlayerControls();
+    WA.openPopup("popUpTCM", 'This is an imporant message!', [{
+        label: "Got it!",
+        className: "primary",
+        callback: (popup) => {
+            WA.restorePlayerControls();
+            popup.close();
+        }
+    }]);
+});
 
 WA.onEnterZone(zoneSchoolName, () => {
     currentPopup =  WA.openPopup("popUpSchool","WorkAdventure is free for teachers a the moment ! Take advantage of our offer ",[
