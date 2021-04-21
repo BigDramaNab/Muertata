@@ -9,7 +9,7 @@ var urlEvent = "https://workadventu.re/events";
 var currentPopup = undefined;
 
 WA.onEnterZone(zoneOfficeName, () => {
-   currentPopup =  WA.openPopup("popUpOffice","Ici un petit cadeau de l'amour, Cliquez pour faire apparaitre votre brief dans un nouvel onglet ",[
+   currentPopup =  WA.openPopup("popUpOffice","Cliquez pour faire apparaitre votre brief dans un nouvel onglet ",[
         {
             label: "Afficher brief",
             className: "popUpElement",
@@ -31,8 +31,16 @@ WA.onEnterZone(zoneEventName, () => {
 })
 
 WA.onEnterZone(zoneTCMName, () => {
-    currentPopup =  WA.openPopup("popUpTCM","A tout moment vous pouvez communiquer avec les membres de votre équipe ",[]);
-})
+    WA.disablePlayerControls();
+    currentPopup =  WA.openPopup("popUpTCM","Equipez vous d'un casque pour continuer!",[{
+        label: "Got it!",
+        className: "primary",
+        callback: (popup) => {
+            WA.restorePlayerControls();
+            popup.close();
+               }
+    }]);
+});
 
 
 WA.onEnterZone(zoneSchoolName, () => {
