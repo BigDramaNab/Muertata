@@ -9,7 +9,7 @@ var urlEvent = "https://workadventu.re/events";
 var currentPopup = undefined;
 
 WA.onEnterZone(zoneOfficeName, () => {
-   currentPopup =  WA.openPopup("popUpOffice","Cliquez pour faire apparaitre votre brief dans un nouvel onglet ",[
+   currentPopup =  WA.openPopup("popUpOffice","Cliquez pour faire apparaitre votre brief dans un nouvel onglet 15h26 ",[
         {
             label: "Afficher brief",
             className: "popUpElement",
