@@ -35,7 +35,7 @@ WA.onEnterZone(zoneTCMName, () => {
 
 WA.onEnterZone(zoneTCMName, () => {
     WA.disablePlayerControls();
-    WA.openPopup("popUpTCM", 'This is an imporant message!', [{
+    currentPopup = WA.openPopup("popUpTCM", 'This is an imporant message!', [{
         label: "Got it!",
         className: "primary",
         callback: (popup) => {
