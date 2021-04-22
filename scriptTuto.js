@@ -1,6 +1,7 @@
 var isFirstTimeTuto = false;
 var textFirstPopup = 'Bienvenue dans le didacticiel';
 var textSecondPopup = "Vous pouvez parler avec votre équipe dans les bulles (4 maximum) ";
+var textThirdPopup = "ou dans les zones d'échange";
 var targetObjectTutoBubble ='Tutobubble';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
@@ -32,13 +33,13 @@ function launchTuto (){
 
                 WA.openPopup(targetObjectTutoChat, textSecondPopup, [
                     {
-                        label: "Ouvrir Chat",
+                        label: "Suite",
                         className: "popUpElement",
                         callback: (popup1) => {
                             popup1.close();
-                            WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires!",[
+                            WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires !",[
                                 {
-                                    label: "Compris!",
+                                    label: "Compris !",
                                     className : "success",callback:(popup2 => {
                                         popup2.close();
                                         WA.restorePlayerControl();
