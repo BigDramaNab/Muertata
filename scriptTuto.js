@@ -31,19 +31,13 @@ function launchTuto (){
             callback: (popup) => {
                 popup.close();
 
-                WA.openPopup(targetObjectTutoBubble, textSecondPopup, [
+                WA.openPopup(targetObjectTutoChat, textSecondPopup, [
                     {
                         label: "Suite",
                         className: "popUpElement",
                         callback: (popup1) => {
                             popup1.close();
-                            WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires !",[
-                                {
-                                    label: "Compris !",
-                                    className : "success",callback:(popup2 => {
-                                        popup2.close();
-                                        
-                                        WA.openPopup(targetObjectTutoChat, textThirdPopup, [
+                            WA.openPopup(targetObjectTutoChat, textThirdPopup, [
                     {
                         label: "Suite",
                         className: "popUpElement",
@@ -52,9 +46,8 @@ function launchTuto (){
                             WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires !",[
                                 {
                                     label: "Compris !",
-                                    className : "success",callback:(popup2 => {
-                                        popup2.close();
-                                        
+                                    className : "success",callback:(popup3 => {
+                                        popup3.close();
                                         WA.restorePlayerControl();
                                     })
                                 }
