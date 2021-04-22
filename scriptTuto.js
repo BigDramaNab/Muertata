@@ -32,12 +32,12 @@ function launchTuto (){
 
                 WA.openPopup(targetObjectTutoChat, textSecondPopup, [
                     {
-                        label: "Open Chat",
+                        label: "Ouvrir Chat",
                         className: "popUpElement",
                         callback: (popup1) => {
                             WA.sendChatMessage("ici!", 'La police');
                             popup1.close();
-                            WA.openPopup("TutoFinal","Vous avez compris",[
+                            WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires!",[
                                 {
                                     label: "Compris!",
                                     className : "success",callback:(popup2 => {
