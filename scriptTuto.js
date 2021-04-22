@@ -37,12 +37,14 @@ function launchTuto (){
                         className: "popUpElement",
                         callback: (popup1) => {
                             popup1.close();
+                            
                             WA.openPopup(targetObjectTutoChat, textThirdPopup, [
                     {
                         label: "Suite",
                         className: "popUpElement",
                         callback: (popup2) => {
                             popup2.close();
+                            
                             WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires !",[
                                 {
                                     label: "Compris !",
@@ -54,15 +56,18 @@ function launchTuto (){
                             ])
                         }
                     }
-
+                                         
                 ])
             }
         }
-    ]);
+    ])
+            }
+
+            ;
     WA.disablePlayerControl();
 
 }
-
+]
 
 WA.onEnterZone('popupZone', () => {
     WA.displayBubble();
