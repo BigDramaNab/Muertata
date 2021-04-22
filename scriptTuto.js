@@ -1,6 +1,6 @@
 var isFirstTimeTuto = false;
 var textFirstPopup = 'Bienvenue dans le didacticiel';
-var textSecondPopup = "Vous pouvez communiquer jusqu'a 4 personnes dans les bulles ";
+var textSecondPopup = "Vous pouvez parler avec votre équipe dans les bulles (4 maximums) ";
 var targetObjectTutoBubble ='Tutobubble';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
@@ -35,7 +35,7 @@ function launchTuto (){
                         label: "Open Chat",
                         className: "popUpElement",
                         callback: (popup1) => {
-                            WA.sendChatMessage("Vous pouvez parler ici!", 'La police');
+                            WA.sendChatMessage("ici!", 'La police');
                             popup1.close();
                             WA.openPopup("TutoFinal","Vous avez compris",[
                                 {
