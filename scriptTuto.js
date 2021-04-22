@@ -1,6 +1,6 @@
 var isFirstTimeTuto = false;
 var textFirstPopup = 'Bienvenue dans le didacticiel';
-var textSecondPopup = "Vous pouvez parler avec votre équipe dans les bulles (4 maximum) ou dans les zones d'échange marquée d'un sol à damiers.";
+var textSecondPopup = "Vous pouvez parler avec votre équipe dans les bulles (4 maximum)";
 var textThirdPopup = "ou dans les zones d'échange";
 var targetObjectTutoBubble ='Tutobubble';
 var targetObjectTutoChat ='tutoChat';
@@ -31,7 +31,7 @@ function launchTuto (){
             callback: (popup) => {
                 popup.close();
 
-                WA.openPopup(targetObjectTutoChat, textSecondPopup, [
+                WA.openPopup(targetObjectTutoBubble, textSecondPopup, [
                     {
                         label: "Suite",
                         className: "popUpElement",
@@ -42,6 +42,19 @@ function launchTuto (){
                                     label: "Compris !",
                                     className : "success",callback:(popup2 => {
                                         popup2.close();
+                                        
+                                        WA.openPopup(targetObjectTutoChat, textThirdPopup, [
+                    {
+                        label: "Suite",
+                        className: "popUpElement",
+                        callback: (popup2) => {
+                            popup2.close();
+                            WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires !",[
+                                {
+                                    label: "Compris !",
+                                    className : "success",callback:(popup2 => {
+                                        popup2.close();
+                                        
                                         WA.restorePlayerControl();
                                     })
                                 }
