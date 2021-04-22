@@ -8,7 +8,7 @@ var popUpExplanation = undefined;
 
 
 
-
+WA.sendChatMessage('Bienvenue dans le didacticiel', 'Police');
 
 
 
