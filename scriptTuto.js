@@ -35,6 +35,7 @@ function launchTuto (){
                         label: "Ouvrir Chat",
                         className: "popUpElement",
                         callback: (popup1) => {
+                            popup1.close();
                             WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires!",[
                                 {
                                     label: "Compris!",
