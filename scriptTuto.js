@@ -1,7 +1,6 @@
 var isFirstTimeTuto = false;
 var textFirstPopup = 'Bienvenue dans le didacticiel';
-var textSecondPopup = "Vous pouvez parler avec votre équipe dans les bulles (4 maximum)";
-var textThirdPopup = "ou dans les zones d'échange";
+var textSecondPopup = "Vous pouvez parler avec votre équipe dans les bulles (4 max) ";
 var targetObjectTutoBubble ='Tutobubble';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
@@ -31,43 +30,33 @@ function launchTuto (){
             callback: (popup) => {
                 popup.close();
 
-                WA.openPopup(targetObjectTutoChat, textSecondPopup, [
+                WA.openPopup(targetObjectTutoBubble, textSecondPopup, [
                     {
                         label: "Suite",
                         className: "popUpElement",
                         callback: (popup1) => {
+                            
                             popup1.close();
-                            
-                            WA.openPopup(targetObjectTutoChat, textThirdPopup, [
-                    {
-                        label: "Suite",
-                        className: "popUpElement",
-                        callback: (popup2) => {
-                            popup2.close();
-                            
                             WA.openPopup("TutoFinal","N'oubliez pas que les écouteurs sont obligatoires !",[
                                 {
                                     label: "Compris !",
-                                    className : "success",callback:(popup3 => {
-                                        popup3.close();
+                                    className : "success",callback:(popup2 => {
+                                        popup2.close();
                                         WA.restorePlayerControl();
                                     })
                                 }
                             ])
                         }
                     }
-                                         
+
                 ])
             }
         }
-    ])
-            }
-
-            ;
+    ]);
     WA.disablePlayerControl();
 
 }
-]
+
 
 WA.onEnterZone('popupZone', () => {
     WA.displayBubble();
@@ -76,7 +65,7 @@ WA.onEnterZone('popupZone', () => {
         launchTuto();
     }
     else {
-        popUpExplanation = WA.openPopup(targetObjectTutoExplanation, 'Avez vous besoin de revoir les explications ?', [
+        popUpExplanation = WA.openPopup(targetObjectTutoExplanation, 'Avez vous besoin de revoir les explications?', [
             {
                 label: "Non",
                 className: "error",
