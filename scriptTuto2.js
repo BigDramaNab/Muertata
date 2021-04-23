@@ -1,6 +1,8 @@
 var isFirstTimeTuto = false;
 var textFirstPopup = 'Bienvenue dans le didacticiel';
-var textSecondPopup = "Vous pouvez parler avec votre équipe dans les bulles (4 max) ";
+var textSecondPopup = "Vous pouvez communiquer avec votre équipe en vous croisant (une bulle apparaîtra) ";
+var textThirdPopup = "ou dans les zones d’échange (sol à damier)";
+var textFourthPopup = "N’oubliez pas que les écouteurs sont obligatoires !";
 var targetObjectTutoBubble ='Tutobubble';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
