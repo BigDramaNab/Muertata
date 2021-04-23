@@ -12,21 +12,6 @@ var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
 
-WA.onEnterZone('PopupZone1', () => {
-       WA.openPopup(targetObjectTutoBubble1, text1, [
-        {
-            label: "Suite",
-            className: "popUpElement",
-            callback: (popup) => {
-                popup.close();
-            }
-        }
-        ]
-                 )
-}
-
-
-
 
 
 
@@ -68,7 +53,8 @@ function launchTuto (){
 
 
 
-function launchTuto (){
+
+WA.onEnterZone('PopupZone3', () => {
     WA.openPopup(targetObjectTutoBubble3, text4, [
         {
             label: "Suite",
@@ -84,38 +70,6 @@ function launchTuto (){
 
 
 
-
-WA.onEnterZone('PopupZone2', () => {
-    WA.displayBubble();
-    if (!isFirstTimeTuto) {
-        isFirstTimeTuto = true;
-        launchTuto();
-    }
-    else {
-        popUpExplanation = WA.openPopup(targetObjectTutoExplanation, 'Avez vous besoin de revoir les explications ?', [
-            {
-                label: "Non",
-                className: "error",
-                callback: (popup) => {
-                    popup.close();
-                }
-            },
-            {
-                label: "Oui",
-                className: "success",
-                callback: (popup) => {
-                    popup.close();
-                    launchTuto();
-                }
-            }
-        ])
-    }
-});
-
-WA.onLeaveZone('PopupZone1', () => {
-    if (popUpExplanation !== undefined) popUpExplanation.close();
-    WA.removeBubble();
-})
 
 
 
@@ -151,41 +105,6 @@ WA.onEnterZone('PopupZone2', () => {
 });
 
 WA.onLeaveZone('PopupZone2', () => {
-    if (popUpExplanation !== undefined) popUpExplanation.close();
-    WA.removeBubble();
-})
-
-
-
-
-WA.onEnterZone('PopupZone3', () => {
-    WA.displayBubble();
-    if (!isFirstTimeTuto) {
-        isFirstTimeTuto = true;
-        launchTuto();
-    }
-    else {
-        popUpExplanation = WA.openPopup(targetObjectTutoExplanation, 'Avez vous besoin de revoir les explications ?', [
-            {
-                label: "Non",
-                className: "error",
-                callback: (popup) => {
-                    popup.close();
-                }
-            },
-            {
-                label: "Oui",
-                className: "success",
-                callback: (popup) => {
-                    popup.close();
-                    launchTuto();
-                }
-            }
-        ])
-    }
-});
-
-WA.onLeaveZone('PopupZone3', () => {
     if (popUpExplanation !== undefined) popUpExplanation.close();
     WA.removeBubble();
 })
