@@ -1,7 +1,7 @@
 var isFirstTimeTuto = false;
 var text1 = 'Bienvenue dans le didacticiel';
-var text2 = "Vous pouvez communiquer avec votre équipe en vous croisant";
-var text3 = "une bulle apparaîtra";
+var text2 = "Vous pouvez communiquer avec votre équipe en vous croisant ";
+var text3 = "une bulle apparaîtra autour de vous";
 var text4 = "N’oubliez pas que les écouteurs sont obligatoires !";
 var targetObjectTutoBubble1 ='TutoBubble1';
 var targetObjectTutoBubble2a ='TutoBubble2a';
@@ -92,7 +92,7 @@ WA.onLeaveZone('PopupZone1', () => {
 })
 
 
-WA.onEnterZone('PopupZone1', () => {
+WA.onEnterZone(targetObjectTutoBubble1, () => {
     currentPopup =  WA.openPopup("TutoBubble1","WorkAdventure is free for teachers a the moment ! Take advantage of our offer ",[
         {
             label: "Suite",
@@ -102,4 +102,9 @@ WA.onEnterZone('PopupZone1', () => {
             })
         }]);
 })
-WA.onLeaveZone('PopupZone1', closePopUp)
+WA.onLeaveZone(targetObjectTutoBubble1, closePopUp)
+
+
+
+
+
