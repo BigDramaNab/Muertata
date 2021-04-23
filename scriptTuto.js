@@ -54,25 +54,6 @@ function launchTuto (){
 
 
 
-WA.onEnterZone('PopupZone3', () => {
-    WA.openPopup(targetObjectTutoBubble3, text4, [
-        {
-            label: "Suite",
-            className: "popUpElement",
-            callback: (popup) => {
-                popup.close();
-            }
-        }
-        ]
-                 )
-}
-
-
-
-
-
-
-
 
 
 
