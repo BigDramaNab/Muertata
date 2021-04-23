@@ -23,14 +23,8 @@ function launchTuto (){
             callback: (popup) => {
                 popup.close();
 
-                WA.openPopup(targetObjectTutoBubble2b, text3, [
-                    {
-                        label: "Suite",
-                        className: "popUpElement",
-                        callback: (popup1) => {
-                            
-                            popup1.close();
-                            WA.openPopup("ou dans les zones d’échange avec sol à damier",[
+             
+                            WA.openPopup("TutoFinal","ou dans les zones d’échange avec sol à damier",[
                                 {
                                     label: "Compris !",
                                     className : "success",callback:(popup2 => {
@@ -39,10 +33,10 @@ function launchTuto (){
                                     })
                                 }
                             ])
-                        }
-                    }
+                        
+                    
 
-                ])
+                
             }
         }
     ]);
