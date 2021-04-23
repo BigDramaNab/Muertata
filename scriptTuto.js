@@ -174,39 +174,3 @@ WA.onLeaveZone('PopupZone8', closePopUp)
 
 
 
-
-
-function launchTuto (){
-    WA.openPopup(targetObjectTutoBubble9, text9, [
-        {
-            label: "Suite",
-            className: "popUpElement",
-            callback: (popup) => {
-                popup.close();
-
-                WA.openPopup(targetObjectTutoBubble10, text10, [
-                    {
-                        label: "Suite",
-                        className: "popUpElement",
-                        callback: (popup1) => {
-                            
-                            popup1.close();
-                            WA.openPopup("TutoBubble11","Si vous avez un problème, allez voir la police dans la zone commissaire.",[
-                                {
-                                    label: "Compris !",
-                                    className : "success",callback:(popup2 => {
-                                        popup2.close();
-                                        WA.restorePlayerControl();
-                                    })
-                                }
-                            ])
-                        }
-                    }
-
-                ])
-            }
-        }
-    ]);
-    WA.disablePlayerControl();
-
-}
