@@ -8,7 +8,8 @@
         },
      "export":
         {
-         "format":"json"
+         "format":"json",
+         "target":"."
         }
     },
  "height":34,
@@ -51,7 +52,7 @@
                 {
                  "name":"jitsiUrl",
                  "type":"string",
-                 "value":"jitsi.bigdrama.fr\/"
+                 "value":"cloud.bigdrama.fr\/"
                 }],
          "type":"tilelayer",
          "visible":true,
