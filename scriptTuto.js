@@ -8,6 +8,8 @@ var targetObjectTutoBubble2a ='TutoBubble2a';
 var targetObjectTutoBubble2b ='TutoBubble2b';
 var targetObjectTutoBubble2c ='TutoBubble2c';
 var targetObjectTutoBubble3 ='TutoBubble3';
+var targetObjectTutoBubble6 ='TutoBubble6';
+var targetObjectTutoBubble7 ='TutoBubble7';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
@@ -86,19 +88,19 @@ WA.onEnterZone('PopupZone2', () => {
 
 
 
-WA.onLeaveZone('PopupZone1', () => {
+WA.onLeaveZone('PopupZone2', () => {
     if (popUpExplanation !== undefined) popUpExplanation.close();
     WA.removeBubble();
 })
 
 
 WA.onEnterZone('PopupZone1', () => {
-    currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel",[
+    currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
         {
             label: "Suite",
             className: "popUpElement",
             callback: (popup => {
-                WA.openTab('http://bigdrama.fr');
+                popup.close();
             })
         }]);
 })
@@ -106,5 +108,43 @@ WA.onLeaveZone('PopupZone1', closePopUp)
 
 
 
+WA.onEnterZone('PopupZone3', () => {
+    currentPopup =  WA.openPopup("TutoBubble3","N’oubliez pas que les écouteurs sont obligatoires !",[
+        {
+            label: "J'ai compris",
+            className: "popUpElement",
+            callback: (popup => {
+                popup.close();
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone3', closePopUp)
 
 
+
+
+WA.onEnterZone('PopupZone6', () => {
+    currentPopup =  WA.openPopup("TutoBubble6","Voici l’arbre généalogique des Florimond à garder sous la main",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/j06c/');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone6', closePopUp)
+
+
+
+WA.onEnterZone('PopupZone7', () => {
+    currentPopup =  WA.openPopup("TutoBubble7","Prenez bien connaissance du compte-rendu du commissaire",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/z01//');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone7', closePopUp)
