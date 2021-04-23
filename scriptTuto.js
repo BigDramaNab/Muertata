@@ -18,7 +18,7 @@ var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
 
-
+WA.sendChatMessage('14H05', 'Mr Robot');
 
 
 function launchTuto (){
@@ -117,7 +117,7 @@ WA.onLeaveZone('PopupZone3', closePopUp)
 
 
 WA.onEnterZone('PopupZone1', () => {
-    WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
+    currentPopup = WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
         {
             label: "Suite",
             className: "popUpElement",
@@ -172,5 +172,11 @@ WA.onEnterZone('PopupZone8', () => {
 })
 WA.onLeaveZone('PopupZone8', closePopUp)
 
+function closePopUp(){
+    if (currentPopup !== undefined) {
+        currentPopup.close();
+        currentPopup = undefined;
+    }
+}
 
 
