@@ -17,7 +17,7 @@ var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
-WA.sendChatMessage('14h20', 'Mr Robot');
+WA.sendChatMessage('14h30', 'Mr Robot');
 
 
 function launchTuto (){
@@ -123,9 +123,16 @@ WA.onLeaveZone('PopupZone3', closePopUp)
 
 
 WA.onEnterZone('PopupZone3bis', () => {
-    WA.openCoWebSite('https://bigdramanab.github.io/Muertata/Indices/J03.html');
-WA.onLeaveZone('PopupZone3bis', () => {
-    WA.closeCoWebSite();
+   currentPopup =  WA.openPopup("TutoBubble3bis","Problèmes techniques",[
+        {
+            label: "voir",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab("https://bigdramanab.github.io/Muertata/Indices/J03.html");
+            })
+        }]);
+})
+
 
 
 
