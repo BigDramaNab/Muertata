@@ -86,7 +86,7 @@ WA.onEnterZone('PopupZone2', () => {
 
 
 
-WA.onLeaveZone('PopupZone1', () => {
+WA.onLeaveZone('PopupZone2', () => {
     if (popUpExplanation !== undefined) popUpExplanation.close();
     WA.removeBubble();
 })
@@ -95,16 +95,13 @@ WA.onLeaveZone('PopupZone1', () => {
 WA.onEnterZone('PopupZone1', () => {
     currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel",[
         {
-            label: "Suite",
+            label: "OK",
             className: "popUpElement",
             callback: (popup => {
-                WA.openTab('http://bigdrama.fr');
+                popup.close();
             })
         }]);
 })
 WA.onLeaveZone('PopupZone1', closePopUp)
-
-
-
 
 
