@@ -11,6 +11,7 @@ var targetObjectTutoBubble11 ='TutoBubble11';
 var targetObjectTutoBubble12 ='TutoBubble12';
 var targetObjectTutoBubble13 ='TutoBubble13';
 var targetObjectTutoBubble14 ='TutoBubble14';
+var targetObjectTutoBubble15 ='TutoBubble15';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
@@ -119,11 +120,24 @@ WA.onEnterZone('PopupZone14', () => {
             label: "OUVRIR",
             className: "popUpElement",
             callback: (popup => {
-                WA.openTab('https://www.bigdrama.fr/parfumdefamille/z01//');
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/z01/');
             })
         }]);
 })
 WA.onLeaveZone('PopupZone14', closePopUp)
+
+
+WA.onEnterZone('PopupZone15', () => {
+    currentPopup =  WA.openPopup("TutoBubble15","Voici le plan du pavillon des gardiens.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/j11b/');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone15', closePopUp)
 
 
 
