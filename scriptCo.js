@@ -6,6 +6,7 @@ var targetObjectTutoBubble19 ='TutoBubble19';
 var targetObjectTutoBubble20 ='TutoBubble20';
 var targetObjectTutoBubble24 ='TutoBubble24';
 var targetObjectTutoBubble22 ='TutoBubble22';
+var targetObjectTutoBubble21 ='TutoBubble21';
 var targetObjectTutoBubble21a ='TutoBubble21a';
 var targetObjectTutoBubble21b ='TutoBubble21b';
 var targetObjectTutoBubble21c ='TutoBubble21c';
@@ -18,7 +19,7 @@ var popUpExplanation = undefined;
 
 
 WA.onEnterZone('PopupZone21a', () => {
-    currentPopup =  WA.openPopup("TutoBubble21a","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+    currentPopup =  WA.openPopup("TutoBubble21","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
@@ -31,7 +32,7 @@ WA.onLeaveZone('PopupZone21a', closePopUp)
 
 
 WA.onEnterZone('PopupZone21b', () => {
-    currentPopup =  WA.openPopup("TutoBubble21b","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+    currentPopup =  WA.openPopup("TutoBubble21","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
@@ -44,7 +45,7 @@ WA.onLeaveZone('PopupZone21b', closePopUp)
 
 
 WA.onEnterZone('PopupZone21c', () => {
-    currentPopup =  WA.openPopup("TutoBubble21c","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+    currentPopup =  WA.openPopup("TutoBubble21","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
@@ -57,7 +58,7 @@ WA.onLeaveZone('PopupZone21c', closePopUp)
 
 
 WA.onEnterZone('PopupZone21d', () => {
-    currentPopup =  WA.openPopup("TutoBubble21d","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+    currentPopup =  WA.openPopup("TutoBubble21","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
@@ -70,7 +71,7 @@ WA.onLeaveZone('PopupZone21d', closePopUp)
 
 
 WA.onEnterZone('PopupZone21e', () => {
-    currentPopup =  WA.openPopup("TutoBubble21e","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+    currentPopup =  WA.openPopup("TutoBubble21","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
