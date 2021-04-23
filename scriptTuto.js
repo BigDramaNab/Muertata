@@ -99,19 +99,6 @@ WA.onLeaveZone('PopupZone2', () => {
 
 
 
-WA.onEnterZone('PopupZone1', () => {
-    currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
-        {
-            label: "Suite",
-            className: "popUpElement",
-            callback: (popup => {
-                popup.close();
-            })
-        }]);
-})
-WA.onLeaveZone('PopupZone1', closePopUp)
-
-
 
 WA.onEnterZone('PopupZone3', () => {
     currentPopup =  WA.openPopup("TutoBubble3","N’oubliez pas que les écouteurs sont obligatoires !",[
@@ -124,6 +111,23 @@ WA.onEnterZone('PopupZone3', () => {
         }]);
 })
 WA.onLeaveZone('PopupZone3', closePopUp)
+
+
+
+
+
+WA.onEnterZone('PopupZone1', () => {
+    currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
+        {
+            label: "Suite",
+            className: "popUpElement",
+            callback: (popup => {
+                popup.close();
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone1', closePopUp)
+
 
 
 
