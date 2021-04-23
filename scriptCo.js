@@ -78,34 +78,6 @@ WA.onLeaveZone('PopupZone21e', closePopUp)
 
 
 
-WA.onEnterZone('PopupZone25', () => {
-   currentPopup =  WA.openPopup("TutoBubble25","Vous vous trouvez devant le plan du château.",[
-        {
-            label: "OUVRIR",
-            className: "popUpElement",
-            callback: (popup => {
-                WA.openCoWebSite("https://bigdramanab.github.io/Muertata/Indices/G02.html");
-            })
-        }]);
-})
-WA.onLeaveZone("PopupZone25", closePopUp)
-
-
-WA.onEnterZone('PopupZone23', () => {
-   currentPopup =  WA.openPopup("TutoBubble23","Voici le faire-part du mariage.",[
-        {
-            label: "OUVRIR",
-            className: "popUpElement",
-            callback: (popup => {
-                WA.openCoWebSite("https://bigdramanab.github.io/Muertata/Indices/G01.html");
-            })
-        }]);
-})
-WA.onLeaveZone("PopupZone23", closePopUp)
-
-
-
-
 WA.onEnterZone('PopupZone22', () => {
     currentPopup =  WA.openPopup("TutoBubble22","Toutes les archives audio sont compilées ici.",[
         {
@@ -120,53 +92,18 @@ WA.onLeaveZone('PopupZone22', closePopUp)
 
 
 
-WA.onEnterZone('PopupZone24a', () => {
-    currentPopup =  WA.openPopup("TutoBubble24a","Interrogatoire de Narcisse.",[
+WA.onEnterZone('PopupZone24', () => {
+    currentPopup =  WA.openPopup("TutoBubble24","Tous les interrogatoires sont compilés ici.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
             callback: (popup => {
-                WA.openCoWebSite('https://bigdramanab.github.io/Muertata/Indices/V01.html');
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/v00/');
             })
         }]);
 })
-WA.onLeaveZone('PopupZone24a', closePopUp)
+WA.onLeaveZone('PopupZone24', closePopUp)
 
-WA.onEnterZone('PopupZone24b', () => {
-    currentPopup =  WA.openPopup("TutoBubble24b","Interrogatoire de Violetta.",[
-        {
-            label: "OUVRIR",
-            className: "popUpElement",
-            callback: (popup => {
-                WA.openCoWebSite('https://bigdramanab.github.io/Muertata/Indices/V02.html');
-            })
-        }]);
-})
-WA.onLeaveZone('PopupZone24b', closePopUp)
-
-WA.onEnterZone('PopupZone24c', () => {
-    currentPopup =  WA.openPopup("TutoBubble24c","Interrogatoire de Lila.",[
-        {
-            label: "OUVRIR",
-            className: "popUpElement",
-            callback: (popup => {
-                WA.openCoWebSite('https://bigdramanab.github.io/Muertata/Indices/V03.html');
-            })
-        }]);
-})
-WA.onLeaveZone('PopupZone24c', closePopUp)
-
-WA.onEnterZone('PopupZone24d', () => {
-    currentPopup =  WA.openPopup("TutoBubble24d","Interrogatoire d'Iris.",[
-        {
-            label: "OUVRIR",
-            className: "popUpElement",
-            callback: (popup => {
-                WA.openCoWebSite('https://bigdramanab.github.io/Muertata/Indices/V04.html');
-            })
-        }]);
-})
-WA.onLeaveZone('PopupZone24d', closePopUp)
                
                
 
