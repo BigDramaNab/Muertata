@@ -27,8 +27,8 @@ function launchTuto (){
                             WA.openPopup("TutoFinal","ou dans les zones d’échange avec sol à damier",[
                                 {
                                     label: "Compris !",
-                                    className : "success",callback:(popup2 => {
-                                        popup2.close();
+                                    className : "success",callback:(popup1 => {
+                                        popup1.close();
                                         WA.restorePlayerControl();
                                     })
                                 }
