@@ -10,6 +10,103 @@ var popUpExplanation = undefined;
 
 
 
+WA.onEnterZone('PopupZone21a', () => {
+    currentPopup =  WA.openPopup("TutoBubble21a","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://docs.google.com/document/d/1UcJgXgf2oXVQjRFh8VnQ_wcqB89qF0Gx5bNmbBRkypg/edit?usp=sharing');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone21a', closePopUp)
+
+
+WA.onEnterZone('PopupZone21b', () => {
+    currentPopup =  WA.openPopup("TutoBubble21b","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://docs.google.com/document/d/1OfPIkOuWaJc_DnN8D4xY-FilwjYy8UHxB_hM7WKIuyM/edit?usp=sharing');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone21b', closePopUp)
+
+
+WA.onEnterZone('PopupZone21c', () => {
+    currentPopup =  WA.openPopup("TutoBubble21c","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://docs.google.com/document/d/1NVEHjWr8jyWLo_ormDmP4KCZRPe7RmPzVjdIsYApRUc/edit?usp=sharing');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone21c', closePopUp)
+
+
+WA.onEnterZone('PopupZone21d', () => {
+    currentPopup =  WA.openPopup("TutoBubble21d","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://docs.google.com/document/d/111y8aWje2_Ez_kHnfErNV0uHX9wd9SFY40uMRKfDlvY/edit?usp=sharing');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone21d', closePopUp)
+
+
+WA.onEnterZone('PopupZone21e', () => {
+    currentPopup =  WA.openPopup("TutoBubble21e","Voici votre rapport d'enquête à remplir à l'aide des indices présents dans le commissariat.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://docs.google.com/document/d/1BWLDsUHp7LmQFaTXXkT4QlTeg1jwJk_BZMOcNKf2TqQ/edit?usp=sharing');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone21e', closePopUp)
+
+
+
+
+
+WA.onEnterZone('PopupZone22', () => {
+    currentPopup =  WA.openPopup("TutoBubble22","Toutes les archives audio sont compilées ici.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/a00');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone22', closePopUp)
+
+
+
+WA.onEnterZone('PopupZone24', () => {
+    currentPopup =  WA.openPopup("TutoBubble24","Tous les interrogatoires sont compilés ici.",[
+        {
+            label: "OUVRIR",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/v00/');
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone24', closePopUp)
+
+               
+               
+
 WA.onEnterZone('exitZoneA', () => {
     WA.goToPage('https://www.bigdrama.fr/parfumdefamille/explicationsa');
 })
