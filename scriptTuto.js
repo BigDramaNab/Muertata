@@ -17,7 +17,7 @@ var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
-WA.sendChatMessage('14h30', 'Mr Robot');
+WA.sendChatMessage('14h44', 'Mr Robot');
 
 
 function launchTuto (){
@@ -128,11 +128,11 @@ WA.onEnterZone('PopupZone3bis', () => {
             label: "voir",
             className: "popUpElement",
             callback: (popup => {
-                WA.openTab("https://bigdramanab.github.io/Muertata/Indices/J03.html");
+                WA.openCoWebSite("https://bigdramanab.github.io/Muertata/Indices/J03.html");
             })
         }]);
 })
-
+WA.onLeaveZone("PopupZone3bis", closePopUp)
 
 
 
