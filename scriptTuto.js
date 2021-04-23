@@ -92,7 +92,7 @@ WA.onLeaveZone('PopupZone1', () => {
 })
 
 
-WA.onEnterZone(targetObjectTutoBubble1, () => {
+WA.onEnterZone('PopupZone1', () => {
     currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel",[
         {
             label: "Suite",
@@ -102,7 +102,7 @@ WA.onEnterZone(targetObjectTutoBubble1, () => {
             })
         }]);
 })
-WA.onLeaveZone(targetObjectTutoBubble1, closePopUp)
+WA.onLeaveZone('PopupZone1', closePopUp)
 
 
 
