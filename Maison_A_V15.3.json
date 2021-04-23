@@ -2287,7 +2287,7 @@
                  "name":"TutoBubble15",
                  "rotation":0,
                  "type":"",
-                 "visible":true,
+                 "visible":false,
                  "width":153.059633690019,
                  "x":676.676129902055,
                  "y":365.743942307651
