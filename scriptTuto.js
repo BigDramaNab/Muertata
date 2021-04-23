@@ -6,6 +6,7 @@ var text4 = "N’oubliez pas que les écouteurs sont obligatoires !";
 var targetObjectTutoBubble1 ='TutoBubble1';
 var targetObjectTutoBubble2a ='TutoBubble2a';
 var targetObjectTutoBubble2b ='TutoBubble2b';
+var targetObjectTutoBubble2c ='TutoBubble2c';
 var targetObjectTutoBubble3 ='TutoBubble3';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
@@ -30,7 +31,7 @@ function launchTuto (){
                         callback: (popup1) => {
                             
                             popup1.close();
-                            WA.openPopup("TutoFinal","ou dans les zones d’échange avec leur sol à damier",[
+                            WA.openPopup("TutoBubble2c","ou dans les zones d’échange avec leur sol à damier",[
                                 {
                                     label: "Compris !",
                                     className : "success",callback:(popup2 => {
