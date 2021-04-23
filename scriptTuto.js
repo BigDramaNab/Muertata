@@ -6,25 +6,10 @@ var text4 = "N’oubliez pas que les écouteurs sont obligatoires !";
 var targetObjectTutoBubble1 ='TutoBubble1';
 var targetObjectTutoBubble2a ='TutoBubble2a';
 var targetObjectTutoBubble2b ='TutoBubble2b';
-var targetObjectTutoBubble3 ='sds';
+var targetObjectTutoBubble3 ='TutoBubble3';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
-
-
-function launchTuto (){
-    WA.openPopup(targetObjectTutoBubble1, text1, [
-        {
-            label: "Suite",
-            className: "popUpElement",
-            callback: (popup) => {
-                popup.close();
-            }
-        }
-        ]
-                 )
-}
-
 
 
 
