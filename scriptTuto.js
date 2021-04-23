@@ -3,6 +3,8 @@ var text1 = 'Bienvenue dans le didacticiel';
 var text2 = "Vous pouvez communiquer avec votre équipe en vous croisant ";
 var text3 = "une bulle apparaîtra autour de vous";
 var text4 = "N’oubliez pas que les écouteurs sont obligatoires !";
+var text9 = "Bienvenue dans le pavillon des gardiens.";
+var text10 = "Le château a brûlé, mais la famille habite ici. Il y a des indices partout. ";
 var targetObjectTutoBubble1 ='TutoBubble1';
 var targetObjectTutoBubble2a ='TutoBubble2a';
 var targetObjectTutoBubble2b ='TutoBubble2b';
@@ -10,6 +12,11 @@ var targetObjectTutoBubble2c ='TutoBubble2c';
 var targetObjectTutoBubble3 ='TutoBubble3';
 var targetObjectTutoBubble6 ='TutoBubble6';
 var targetObjectTutoBubble7 ='TutoBubble7';
+var targetObjectTutoBubble8 ='TutoBubble8';
+var targetObjectTutoBubble9 ='TutoBubble9';
+var targetObjectTutoBubble10 ='TutoBubble10';
+var targetObjectTutoBubble11 ='TutoBubble11';
+var targetObjectTutoBubble12 ='TutoBubble12';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
@@ -94,6 +101,8 @@ WA.onLeaveZone('PopupZone2', () => {
 })
 
 
+
+
 WA.onEnterZone('PopupZone1', () => {
     currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
         {
@@ -148,3 +157,56 @@ WA.onEnterZone('PopupZone7', () => {
         }]);
 })
 WA.onLeaveZone('PopupZone7', closePopUp)
+
+
+
+WA.onEnterZone('PopupZone8', () => {
+    currentPopup =  WA.openPopup("TutoBubble8","Bravo vous avez terminé le didacticiel. Vous pouvez entrer dans le pavillon et explorer les indices.",[
+        {
+            label: "Bonne enquête !",
+            className: "popUpElement",
+            callback: (popup => {
+                popup.close();
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone8', closePopUp)
+
+
+
+
+
+function launchTuto (){
+    WA.openPopup(targetObjectTutoBubble9, text9, [
+        {
+            label: "Suite",
+            className: "popUpElement",
+            callback: (popup) => {
+                popup.close();
+
+                WA.openPopup(targetObjectTutoBubble10, text10, [
+                    {
+                        label: "Suite",
+                        className: "popUpElement",
+                        callback: (popup1) => {
+                            
+                            popup1.close();
+                            WA.openPopup("TutoBubble11","Si vous avez un problème, allez voir la police dans la zone commissaire.",[
+                                {
+                                    label: "Compris !",
+                                    className : "success",callback:(popup2 => {
+                                        popup2.close();
+                                        WA.restorePlayerControl();
+                                    })
+                                }
+                            ])
+                        }
+                    }
+
+                ])
+            }
+        }
+    ]);
+    WA.disablePlayerControl();
+
+}
