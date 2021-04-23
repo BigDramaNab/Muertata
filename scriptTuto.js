@@ -93,7 +93,7 @@ WA.onLeaveZone('PopupZone1', () => {
 
 
 WA.onEnterZone(targetObjectTutoBubble1, () => {
-    currentPopup =  WA.openPopup("TutoBubble1","WorkAdventure is free for teachers a the moment ! Take advantage of our offer ",[
+    currentPopup =  WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel",[
         {
             label: "Suite",
             className: "popUpElement",
