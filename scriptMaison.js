@@ -5,36 +5,36 @@ var text3 = "une bulle apparaîtra autour de vous";
 var text4 = "N’oubliez pas que les écouteurs sont obligatoires !";
 var text9 = "Bienvenue dans le pavillon des gardiens.";
 var text10 = "Le château a brûlé, mais la famille habite ici. Il y a des indices partout. ";
-var targetObjectTutoBubble1 ='TutoBubble1';
-var targetObjectTutoBubble2a ='TutoBubble2a';
-var targetObjectTutoBubble2b ='TutoBubble2b';
-var targetObjectTutoBubble2c ='TutoBubble2c';
-var targetObjectTutoBubble3 ='TutoBubble3';
-var targetObjectTutoBubble6 ='TutoBubble6';
-var targetObjectTutoBubble7 ='TutoBubble7';
-var targetObjectTutoBubble8 ='TutoBubble8';
+var targetObjectTutoBubble9 ='TutoBubble9';
+var targetObjectTutoBubble10 ='TutoBubble10';
+var targetObjectTutoBubble11 ='TutoBubble11';
+var targetObjectTutoBubble12 ='TutoBubble12';
+var targetObjectTutoBubble13 ='TutoBubble13';
+var targetObjectTutoBubble14 ='TutoBubble14';
+var targetObjectTutoBubble15 ='TutoBubble15';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
 
 
+
 function launchTuto (){
-    WA.openPopup(targetObjectTutoBubble2a, text2, [
+    WA.openPopup(targetObjectTutoBubble9, text9, [
         {
             label: "Suite",
             className: "popUpElement",
             callback: (popup) => {
                 popup.close();
 
-                WA.openPopup(targetObjectTutoBubble2b, text3, [
+                WA.openPopup(targetObjectTutoBubble10, text10, [
                     {
                         label: "Suite",
                         className: "popUpElement",
                         callback: (popup1) => {
                             
                             popup1.close();
-                            WA.openPopup("TutoBubble2c","N’oubliez pas que les écouteurs sont obligatoires !",[
+                            WA.openPopup("TutoBubble11","Si vous avez un problème, allez voir la police dans la zone commissaire.",[
                                 {
                                     label: "Compris !",
                                     className : "success",callback:(popup2 => {
@@ -57,10 +57,7 @@ function launchTuto (){
 
 
 
-
-
-
-WA.onEnterZone('PopupZone2', () => {
+WA.onEnterZone('PopupZone9', () => {
     WA.displayBubble();
     if (!isFirstTimeTuto) {
         isFirstTimeTuto = true;
@@ -89,42 +86,22 @@ WA.onEnterZone('PopupZone2', () => {
 
 
 
-WA.onLeaveZone('PopupZone2', () => {
-    if (popUpExplanation !== undefined) popUpExplanation.close();
-    WA.removeBubble();
-})
-
-
-WA.onEnterZone('PopupZone1', () => {
-    currentPopup = WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
+WA.onEnterZone('PopupZone10', () => {
+    currentPopup =  WA.openPopup("TutoBubble12","N'allez vers le commissariat que si vous en avez reçu l'autorisation !",[
         {
-            label: "Suite",
+            label: "J'ai compris",
             className: "popUpElement",
             callback: (popup => {
                 popup.close();
             })
         }]);
 })
-WA.onLeaveZone('PopupZone1', closePopUp)
-
-
-WA.onEnterZone('PopupZone3', () => {
-    currentPopup =  WA.openPopup("TutoBubble3"," Les zones d'échange (sol à damier) vous permettent de communiquer avec toute votre équipe.",[
-        {
-            label: "OK",
-            className: "popUpElement",
-            callback: (popup => {
-                popup.close();
-            })
-        }]);
-})
-WA.onLeaveZone('PopupZone3', closePopUp)
+WA.onLeaveZone('PopupZone10', closePopUp)
 
 
 
-
-WA.onEnterZone('PopupZone6', () => {
-    currentPopup =  WA.openPopup("TutoBubble6","Voici l’arbre généalogique des Florimond à garder sous la main.",[
+WA.onEnterZone('PopupZone13', () => {
+    currentPopup =  WA.openPopup("TutoBubble13","Voici l’arbre généalogique des Florimond à garder sous la main.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
@@ -133,12 +110,12 @@ WA.onEnterZone('PopupZone6', () => {
             })
         }]);
 })
-WA.onLeaveZone('PopupZone6', closePopUp)
+WA.onLeaveZone('PopupZone13', closePopUp)
 
 
 
-WA.onEnterZone('PopupZone7', () => {
-    currentPopup =  WA.openPopup("TutoBubble7","Prenez bien connaissance du compte-rendu du commissaire.",[
+WA.onEnterZone('PopupZone14', () => {
+    currentPopup =  WA.openPopup("TutoBubble14","Prenez bien connaissance du compte-rendu du commissaire.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
@@ -147,21 +124,22 @@ WA.onEnterZone('PopupZone7', () => {
             })
         }]);
 })
-WA.onLeaveZone('PopupZone7', closePopUp)
+WA.onLeaveZone('PopupZone14', closePopUp)
 
 
-
-WA.onEnterZone('PopupZone8', () => {
-    currentPopup =  WA.openPopup("TutoBubble8","Bravo, vous avez terminé le didacticiel. Vous pouvez entrer dans le pavillon et explorer les indices.",[
+WA.onEnterZone('PopupZone15', () => {
+    currentPopup =  WA.openPopup("TutoBubble15","Voici le plan du pavillon des gardiens.",[
         {
-            label: "Bonne enquête !",
+            label: "OUVRIR",
             className: "popUpElement",
             callback: (popup => {
-                popup.close();
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/j11b/');
             })
         }]);
 })
-WA.onLeaveZone('PopupZone8', closePopUp)
+WA.onLeaveZone('PopupZone15', closePopUp)
+
+
 
 function closePopUp(){
     if (currentPopup !== undefined) {
@@ -169,5 +147,3 @@ function closePopUp(){
         currentPopup = undefined;
     }
 }
-
-
