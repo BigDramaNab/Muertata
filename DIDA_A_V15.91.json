@@ -80,11 +80,6 @@
                  "value":"{ \"startWithAudioMuted\": true }"
                 }, 
                 {
-                 "name":"jitsiInterfaceConfig",
-                 "type":"string",
-                 "value":"{ \"DISABLE_VIDEO_BACKGROUND\" : \"true\" }"
-                }, 
-                {
                  "name":"jitsiRoom",
                  "type":"string",
                  "value":"A"
