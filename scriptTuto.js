@@ -17,7 +17,6 @@ var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
-WA.sendChatMessage('14h44', 'Mr Robot');
 
 
 function launchTuto (){
@@ -110,9 +109,9 @@ WA.onLeaveZone('PopupZone1', closePopUp)
 
 
 WA.onEnterZone('PopupZone3', () => {
-    currentPopup =  WA.openPopup("TutoBubble3"," Les zones d'échange (sol a damier) vous permettent de communiquer avec toute votre équipe",[
+    currentPopup =  WA.openPopup("TutoBubble3"," Les zones d'échange (sol à damier) vous permettent de communiquer avec toute votre équipe.",[
         {
-            label: "Ok",
+            label: "OK",
             className: "popUpElement",
             callback: (popup => {
                 popup.close();
@@ -122,22 +121,10 @@ WA.onEnterZone('PopupZone3', () => {
 WA.onLeaveZone('PopupZone3', closePopUp)
 
 
-WA.onEnterZone('PopupZone3bis', () => {
-   currentPopup =  WA.openPopup("TutoBubble3bis","Problèmes techniques",[
-        {
-            label: "voir",
-            className: "popUpElement",
-            callback: (popup => {
-                WA.openCoWebSite("https://bigdramanab.github.io/Muertata/Indices/J03.html");
-            })
-        }]);
-})
-WA.onLeaveZone("PopupZone3bis", closePopUp)
-
 
 
 WA.onEnterZone('PopupZone6', () => {
-    currentPopup =  WA.openPopup("TutoBubble6","Voici l’arbre généalogique des Florimond à garder sous la main",[
+    currentPopup =  WA.openPopup("TutoBubble6","Voici l’arbre généalogique des Florimond à garder sous la main.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
@@ -151,12 +138,12 @@ WA.onLeaveZone('PopupZone6', closePopUp)
 
 
 WA.onEnterZone('PopupZone7', () => {
-    currentPopup =  WA.openPopup("TutoBubble7","Prenez bien connaissance du compte-rendu du commissaire",[
+    currentPopup =  WA.openPopup("TutoBubble7","Prenez bien connaissance du compte-rendu du commissaire.",[
         {
             label: "OUVRIR",
             className: "popUpElement",
             callback: (popup => {
-                WA.openTab('https://www.bigdrama.fr/parfumdefamille/z01//');
+                WA.openTab('https://www.bigdrama.fr/parfumdefamille/z01/');
             })
         }]);
 })
@@ -165,7 +152,7 @@ WA.onLeaveZone('PopupZone7', closePopUp)
 
 
 WA.onEnterZone('PopupZone8', () => {
-    currentPopup =  WA.openPopup("TutoBubble8","Bravo vous avez terminé le didacticiel. Vous pouvez entrer dans le pavillon et explorer les indices.",[
+    currentPopup =  WA.openPopup("TutoBubble8","Bravo, vous avez terminé le didacticiel. Vous pouvez entrer dans le pavillon et explorer les indices.",[
         {
             label: "Bonne enquête !",
             className: "popUpElement",
