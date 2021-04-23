@@ -57,9 +57,6 @@ function launchTuto (){
 
 
 
-
-
-
 WA.onEnterZone('PopupZone2', () => {
     WA.displayBubble();
     if (!isFirstTimeTuto) {
@@ -87,9 +84,22 @@ WA.onEnterZone('PopupZone2', () => {
     }
 });
 
-WA.onLeaveZone('PopupZone2', () => {
+
+
+WA.onLeaveZone('PopupZone1', () => {
     if (popUpExplanation !== undefined) popUpExplanation.close();
     WA.removeBubble();
 })
 
 
+WA.onEnterZone('PopupZone1', () => {
+    currentPopup =  WA.openPopup("TutoBubble1","WorkAdventure is free for teachers a the moment ! Take advantage of our offer ",[
+        {
+            label: "Suite",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab(urlSchoolOffer);
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone1', closePopUp)
