@@ -17,8 +17,7 @@ var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
-
-WA.sendChatMessage('14H05', 'Mr Robot');
+WA.sendChatMessage('14h20', 'Mr Robot');
 
 
 function launchTuto (){
@@ -36,7 +35,7 @@ function launchTuto (){
                         callback: (popup1) => {
                             
                             popup1.close();
-                            WA.openPopup("TutoBubble2c","ou dans les zones d’échange avec leur sol à damier",[
+                            WA.openPopup("TutoBubble2c","N’oubliez pas que les écouteurs sont obligatoires !",[
                                 {
                                     label: "Compris !",
                                     className : "success",callback:(popup2 => {
@@ -97,25 +96,6 @@ WA.onLeaveZone('PopupZone2', () => {
 })
 
 
-
-
-
-WA.onEnterZone('PopupZone3', () => {
-    currentPopup =  WA.openPopup("TutoBubble3","N’oubliez pas que les écouteurs sont obligatoires !",[
-        {
-            label: "J'ai compris",
-            className: "popUpElement",
-            callback: (popup => {
-                popup.close();
-            })
-        }]);
-})
-WA.onLeaveZone('PopupZone3', closePopUp)
-
-
-
-
-
 WA.onEnterZone('PopupZone1', () => {
     currentPopup = WA.openPopup("TutoBubble1","Bienvenue dans le didacticiel !",[
         {
@@ -129,6 +109,23 @@ WA.onEnterZone('PopupZone1', () => {
 WA.onLeaveZone('PopupZone1', closePopUp)
 
 
+WA.onEnterZone('PopupZone3', () => {
+    currentPopup =  WA.openPopup("TutoBubble3"," Les zones d'échange (sol a damier) vous permettent de communiquer avec toute votre équipe",[
+        {
+            label: "Ok",
+            className: "popUpElement",
+            callback: (popup => {
+                popup.close();
+            })
+        }]);
+})
+WA.onLeaveZone('PopupZone3', closePopUp)
+
+
+WA.onEnterZone('PopupZone3bis', () => {
+    WA.openCoWebSite('https://bigdramanab.github.io/Muertata/Indices/J03.html');
+WA.onLeaveZone('PopupZone3bis', () => {
+    WA.closeCoWebSite();
 
 
 
