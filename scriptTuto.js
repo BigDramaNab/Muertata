@@ -12,8 +12,8 @@ var targetObjectTutoExplanation ='tutoExplanation';
 var popUpExplanation = undefined;
 
 
-function launchTuto (){
-    WA.openPopup(targetObjectTutoBubble1, text1, [
+WA.onEnterZone('PopupZone1', () => {
+       WA.openPopup(targetObjectTutoBubble1, text1, [
         {
             label: "Suite",
             className: "popUpElement",
@@ -85,7 +85,7 @@ function launchTuto (){
 
 
 
-WA.onEnterZone('PopupZone1', () => {
+WA.onEnterZone('PopupZone2', () => {
     WA.displayBubble();
     if (!isFirstTimeTuto) {
         isFirstTimeTuto = true;
