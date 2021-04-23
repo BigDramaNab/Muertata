@@ -1,7 +1,7 @@
 var isFirstTimeTuto = false;
 var text1 = 'Bienvenue dans le didacticiel';
-var text2 = "Vous pouvez communiquer avec votre équipe en vous croisant (une bulle apparaîtra)";
-var text3 = "ou dans les zones d’échange (sol à damier)";
+var text2 = "Vous pouvez communiquer avec votre équipe en vous croisant";
+var text3 = "une bulle apparaîtra";
 var text4 = "N’oubliez pas que les écouteurs sont obligatoires !";
 var targetObjectTutoBubble1 ='TutoBubble1';
 var targetObjectTutoBubble2a ='TutoBubble2a';
@@ -23,26 +23,33 @@ function launchTuto (){
             callback: (popup) => {
                 popup.close();
 
-             
-                            WA.openPopup("TutoFinal","ou dans les zones d’échange avec sol à damier",[
+                WA.openPopup(targetObjectTutoBubble2b, text3, [
+                    {
+                        label: "Suite",
+                        className: "popUpElement",
+                        callback: (popup1) => {
+                            
+                            popup1.close();
+                            WA.openPopup("TutoFinal","ou dans les zones d’échange avec leur sol à damier",[
                                 {
                                     label: "Compris !",
-                                    className : "success",callback:(popup1 => {
-                                        popup1.close();
+                                    className : "success",callback:(popup2 => {
+                                        popup2.close();
                                         WA.restorePlayerControl();
                                     })
                                 }
                             ])
-                        
-                    
+                        }
+                    }
 
-                
+                ])
             }
         }
     ]);
     WA.disablePlayerControl();
 
 }
+
 
 
 
