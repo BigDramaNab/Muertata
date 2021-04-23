@@ -98,7 +98,7 @@ WA.onEnterZone('PopupZone1', () => {
             label: "Suite",
             className: "popUpElement",
             callback: (popup => {
-                WA.openTab(urlSchoolOffer);
+                WA.openTab('http://bigdrama.fr');
             })
         }]);
 })
