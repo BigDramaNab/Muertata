@@ -49,7 +49,7 @@ function launchTuto (){
 
 
 
-WA.onEnterZone('PopupZone11', () => {
+WA.onEnterZone('PopupZone20', () => {
     WA.displayBubble();
     if (!isFirstTimeTuto) {
         isFirstTimeTuto = true;
